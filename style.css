@@ -23,15 +23,21 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  width: 80%;
-  max-width: 750px;
+.darkmode {
   background: #23424a;
   color: white;
+}
+
+.container {
   padding: 50px 0;
 }
 
 .intro-content {
-  width: 50%;
+  max-width: 768px;
   margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.content {
+  width: 50%;
 }
