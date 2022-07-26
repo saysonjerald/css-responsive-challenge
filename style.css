@@ -67,3 +67,38 @@ body {
 .content {
   width: 50%;
 }
+
+.info-section {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.info-section .items {
+  display: flex;
+  gap: 20px;
+}
+
+.col {
+  text-align: center;
+  width: 100%;
+}
+
+.col h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #87629a;
+}
+
+.col p {
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
+.theme-green {
+  background-color: #136c72;
+}
+
+.theme-green h2,
+.theme-green p {
+  color: #fff;
+}
