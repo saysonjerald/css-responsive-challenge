@@ -8,6 +8,11 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -16,7 +21,60 @@ html {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+}
+
+.col {
+}
+
 header {
   background-color: #23424a;
   color: #fff;
+  padding: 12.8rem 0;
 }
+
+header .container.row {
+  justify-content: space-between;
+}
+
+.header__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.header__image {
+  width: 40%;
+}
+
+.header__text h1 {
+  font-size: 4.2rem;
+  margin-bottom: 0.5em;
+}
+
+.header__text p {
+  font-size: 2.4rem;
+  margin-bottom: 3.5em;
+}
+
+.header__text a:link,
+.header__text a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #23424a;
+  background-color: #38cfd9;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0.5em 2.6em;
+  border-radius: 2.4em;
+  text-transform: uppercase;
+}
+
+.header__image img {
+  width: 100%;
+}
+
+/* Main Section */
