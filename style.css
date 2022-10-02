@@ -29,7 +29,7 @@ a:link {
   display: flex;
 }
 
-.col + .col {
+.col {
   width: 100%;
 }
 
@@ -37,6 +37,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 660px;
   height: 80vh;
   background-color: #f3eed9;
 }
@@ -77,4 +78,37 @@ article h3 {
 article .row section p {
   font-family: "Roboto ", sans-serif;
   font-size: 2.1rem;
+  line-height: 1.5em;
+  color: #222c2a;
+}
+
+.col + .col {
+  margin-left: 5rem;
+}
+
+.promotion-1 {
+  background-color: #222c2a;
+  padding: 8rem 0;
+  color: #f3eed9;
+}
+
+.promotion-2 {
+  background-color: #824936;
+  padding: 8rem 0;
+  color: #f3eed9;
+}
+
+.promotion-1 h3,
+.promotion-2 h3 {
+  font-size: 2.4rem;
+  line-height: 1em;
+  margin-bottom: 0.8em;
+}
+
+.promotion-1 p,
+.promotion-2 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.5em;
 }
