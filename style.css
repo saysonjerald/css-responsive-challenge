@@ -9,12 +9,21 @@
 html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 62.5%;
+  font-size: 42.5%;
   /* font-family: "Oswald", sans-serif; */
 }
 
 body {
   font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
 }
 
 img {
@@ -29,6 +38,7 @@ a:visited {
 .container {
   width: 80%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
@@ -36,11 +46,272 @@ a:visited {
   justify-content: space-between;
 }
 
-nav {
+.col {
+  width: 100%;
+}
+
+.button--full {
+  background-color: #a59678 !important;
+  border-radius: 10em;
+  padding: 0.8em 2em !important;
+}
+
+/* ***************************************** */
+/* ************* NAVIGATION   ***************** */
+/* ***************************************** */
+
+header nav {
+  position: relative;
   background-color: #2e323f;
+  padding: 4rem 0;
 }
 
 nav a:link,
 nav a:visited {
   color: #fff;
+}
+
+header nav .logo {
+  height: 6rem;
+}
+
+#menu-button {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: #fefffff2;
+  border-radius: 100%;
+  box-shadow: #000 0.1em 0.1em 0.4em;
+}
+
+#menu-button img {
+  position: absolute;
+  top: 1.4em;
+  left: 1.4em;
+  transform: translate(-50%, -50%);
+  height: 1.2em;
+  width: 1.2em;
+}
+
+header nav .container.row,
+header nav .container.row .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav .container.row .link {
+  display: none;
+  padding: 2em;
+}
+
+header nav .container.row .link.--visible {
+  display: flex;
+}
+
+header nav .container.row .link a {
+  display: block;
+  padding: 1.2em 2em;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+}
+
+/* ***************************************** */
+/* ************* HERO   ***************** */
+/* ***************************************** */
+
+.--golden {
+  color: #a59678;
+}
+
+#hero {
+  background-color: #3b4050;
+  min-height: 90vh;
+  /* max-height: 72rem; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 7.2rem;
+}
+
+#hero .container.row {
+  flex-direction: column;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 9rem;
+  line-height: 1.2em;
+  margin-bottom: 8rem;
+}
+
+#hero p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.818);
+  margin-bottom: 2rem;
+}
+
+#hero a {
+  display: inline-block;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  background-color: #a59678;
+  padding: 0.4em 1.2em;
+  border-radius: 2em;
+}
+
+/* ***************************************** */
+/* ************* FEATURES 1   ***************** */
+/* ***************************************** */
+
+#features-1 {
+  background-color: #f3f3f3;
+  padding: 7.2rem;
+  text-align: center;
+}
+
+#features-1 h3 {
+  font-size: 3rem;
+  color: #a59678;
+  line-height: 1.8em;
+}
+
+#features-1 p {
+  font-size: 1.8rem;
+}
+#features-1 .container.row {
+  flex-direction: column;
+}
+#features-1 .container.row .col + .col {
+  margin-top: 4rem;
+}
+
+/* ***************************************** */
+/* ************* FEATURES 2   ***************** */
+/* ***************************************** */
+
+#features-2 {
+  padding: 7.2rem;
+  text-align: center;
+}
+
+#features-2 .container.row {
+  flex-direction: column;
+}
+
+#features-2 h2 {
+  color: #a59678;
+  font-size: 3.6rem;
+  line-height: 1.8em;
+}
+
+#features-2 p {
+  font-size: 2.1rem;
+  margin: 4em 0em;
+}
+
+#features-2 aside section + section {
+  margin-top: 2rem;
+}
+
+#features-2 aside section {
+  background-color: #3b4050;
+  padding: 4rem;
+}
+
+#features-2 aside section h3 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+#features-2 aside section p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* ***************************************** */
+/* ************* FOOTER   ***************** */
+/* ***************************************** */
+footer {
+  background-color: #3b4050;
+  padding: 7.2rem;
+}
+
+footer h4 {
+  font-size: 4.2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer h5 {
+  font-size: 2.1rem;
+  color: #a59678;
+}
+
+footer p,
+footer nav a {
+  font-size: 1.6rem;
+  color: #bec4da !important;
+}
+
+footer .container.row {
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .container.row .col + .col {
+  margin-top: 4rem;
+}
+
+/* ***************************************** */
+/* ************* Media query   ***************** */
+/* ***************************************** */
+
+@media (max-width: 699px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 43.8%;
+  }
+
+  #features-2 aside {
+    display: flex;
+  }
+
+  #features-2 aside section + section {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 850px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #features-2 aside {
+    display: flex;
+  }
+
+  #features-2 aside section + section {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
 }
