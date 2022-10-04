@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  /* font-family: "Oswald", sans-serif; */
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #2e323f;
+}
+
+nav a:link,
+nav a:visited {
+  color: #fff;
+}
