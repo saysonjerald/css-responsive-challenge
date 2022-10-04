@@ -1,87 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="text">
-        <p>Lorem Ipsum sit</p>
-        <h1>
-          Responsive layout don't <br />
-          have to be a struggle
-        </h1>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquering Responsive Layouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <a class="logo" href="#">
+                <img src="img/logo.svg" alt="conquering responsive layouts">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondary">
+                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-      <article class="container">
-        <h3>Quality Designs</h3>
-        <div class="row">
-          <section class="col">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore, doloremque hic facere, magnam temporibus mollitia optio
-              aliquam deleniti impedit, assumenda modi nostrum sit explicabo
-              perferendis quos vero suscipit fugit sunt.
-            </p>
-          </section>
-          <section class="col">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore, doloremque hic facere, magnam temporibus mollitia optio
-              aliquam deleniti impedit, assumenda modi nostrum sit explicabo
-              perferendis quos vero suscipit fugit sunt.
-            </p>
-          </section>
-        </div>
-      </article>
-      <div class="promotion-1">
+    
+    <section class="hero">
         <div class="container row">
-          <div class="col">
-            <h3>Mad e custom of you</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa
-              nesciunt modi. Minima atque voluptatibus ipsa, exercitationem cum
-              quae aut?
-            </p>
-          </div>
-          <div class="col">
-            <img
-              src="./img/image-01.jpg"
-              alt="Man standing on a mountain facing with sun rise"
-            />
-          </div>
+            <div class="hero__text">
+                <h1>Responsive layouts don’t have to be a struggle</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="btn">I want to learn</a>
+            </div>
+            <img src="img/hero-img.jpg" alt="UX design sketches" class="hero__img">
         </div>
-      </div>
-      <div class="promotion-2">
-        <div class="container row">
-          <div class="col">
-            <h3>Created with care</h3>
-            <p>
-              Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
-              amet luctus venenatis. Turpis in eu mi bibendum neque egestas
-              congue quisque egestas. Pellentesque sit amet porttitor eget dolor
-              morbi non.
-            </p>
-          </div>
-          <div class="col" style="order: -1">
-            <img
-              src="./img/image-02.jpg"
-              alt="Man standing on a mountain facing with sun rise"
-            />
-          </div>
-        </div>
-      </div>
+    </section> 
+
+    <main class="main container row">
+            <section class="primary-content">
+                <h2 class="section-title">Quality designs made custom, on demand, just for you</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </section>
+            <aside class="sidebar">
+                <h2 class="sidebar-title">Cheap</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                <h2 class="sidebar-title">Quick</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                <h2 class="sidebar-title">Quality</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </aside>
     </main>
-  </body>
+
+    <script src="main.js"></script>
+
+</body>
 </html>
