@@ -306,12 +306,103 @@ footer .container.row .col + .col {
     font-size: 62.5%;
   }
 
+  header nav {
+    position: relative;
+    background-color: #2e323f;
+    padding: 1rem 0;
+  }
+
+  header nav .logo {
+    height: 3rem;
+  }
+
+  header nav .container.row .link {
+    display: flex;
+    padding: 0em;
+  }
+
+  header nav .container.row,
+  header nav .container.row .link {
+    flex-direction: row;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  #hero {
+    background-color: #3b4050;
+    min-height: 90vh;
+    /* max-height: 72rem; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 7.2rem;
+  }
+
+  #hero .container.row {
+    flex-direction: row;
+  }
+
+  #hero h1 {
+    margin-bottom: 0rem;
+  }
+
+  #hero .container.row .col + .col {
+    align-self: flex-end;
+  }
+
+  #features-1 .container.row {
+    flex-direction: row;
+  }
+
+  #features-1 .container.row .col + .col {
+    margin-top: 0rem;
+    margin-left: 4rem;
+  }
+
   #features-2 aside {
     display: flex;
   }
 
+  #features-2 .container.row {
+    flex-direction: row;
+  }
+
+  #features-2 aside {
+    flex-direction: column;
+    margin-left: 4rem;
+  }
+
   #features-2 aside section + section {
-    margin-top: 0;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .container.row {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  footer .container.row .col + .col {
+    margin-top: 0rem;
+  }
+
+  footer .container.row .col:first-child {
+    width: 200%;
+    margin-right: 2rem;
+  }
+
+  footer .container.row .col nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer h5 {
+    line-height: 2.5em;
+  }
+
+  footer .container.row .col nav a {
+    line-height: 2em;
   }
 }
